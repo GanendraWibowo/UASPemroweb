@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff; /* White color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #000000;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #8A2BE2; /* Violet color */
+  align-self: flex-start;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #8A2BE2;
+  box-shadow: 0 0 5px rgba(138, 43, 178, 0.5);
+  outline: none;
+}
+
+.error {
+  display: inline-block;
+  color: red;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.btn-submit {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #4169E1 0%, #8A2BE2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(135deg, #27408B 0%, #4B0082 100%);
+  transform: translateY(-3px);
+}
+
+input[type="submit"]:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+  }
+}
